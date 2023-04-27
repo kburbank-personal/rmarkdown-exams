@@ -1,0 +1,39 @@
+---
+title: "Exam title"
+full_exam: true
+print_solutions: true
+output:
+  myexams::compiled_exam
+---
+
+
+
+<!-- 
+To attach files that already exist:
+Rmd files this way:
+```{r child='/Users/kendra/Stat200Sym/QuestionBank/Correlation/Smoking/Smoking.Rmd'}``` 
+
+Tex files this way:
+\importFromPath{/Users/kendra/Stat200Sym/QuestionBank/Normal_Approximation/Cheese/Cheese.tex}
+-->
+
+<!-- Typesetting a titled question -->
+
+\titledquestion{QuestionName} Question text goes here.
+
+:::parts 
+
+@p3 This is a part worth 3 points
+
+```{r}
+# r code goes here
+```
+:::solution
+Here is the solution.
+:::
+
+@p This part doesn't have any points.
+:::
+
+@q3 This is a question worth 3 points.
+
